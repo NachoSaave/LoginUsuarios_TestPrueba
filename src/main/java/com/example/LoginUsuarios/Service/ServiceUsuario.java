@@ -35,7 +35,7 @@ public class ServiceUsuario {
         return repo.buscarId(id);
     }
 
-    public String buscarEdad(int edad){
+    public List<Usuario> buscarEdad(int edad){
         return repo.filtrarEdad(edad);
     }
 

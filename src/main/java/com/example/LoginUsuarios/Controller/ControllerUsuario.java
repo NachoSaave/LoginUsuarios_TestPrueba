@@ -48,7 +48,7 @@ public class ControllerUsuario {
     }
     //edad
     @GetMapping("/edad/{edad}")
-    public String filtrarEdad(@PathVariable int edad){
+    public List<Usuario> filtrarEdad(@PathVariable int edad){
         return serv.buscarEdad(edad);
     }
 

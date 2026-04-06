@@ -73,13 +73,13 @@ public class RepositoryUsuario {
         return listacomuna;
     }
 
-    public String filtrarEdad(int edad){
+    public List<Usuario> filtrarEdad(int edad){
         List<Usuario> listaedad = new ArrayList<>();
         for(Usuario usu : ListaUsuario){
             if(usu.getEdad()==edad){
                 listaedad.add(usu);
             }
         }
-        return listaedad.toString();
+        return listaedad;
     }
 }
